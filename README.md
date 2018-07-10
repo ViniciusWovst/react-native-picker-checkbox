@@ -38,7 +38,7 @@ $ react-native run-android   // For Android
 
   render() {
     return(
-      <RoundPickerCheckBox
+      <PickerCheckBox
         data={items}
         headerComponent={<Text style={{fontSize:25}} >items</Text>}
         OnConfirm={(pItems) => this.handleConfirm(pItems)}
@@ -74,4 +74,4 @@ If you'd like to see something added or changed to this module please open a new
 
 ### License
 
- - [Apache-2.0](https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/LICENSE). Vinícius Wovst
+ - [Apache-2.0](https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/LICENSE). Vinicius Wovst
