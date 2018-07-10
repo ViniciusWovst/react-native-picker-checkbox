@@ -140,8 +140,8 @@ export default class PickerCheckbox extends React.Component {
 
     renderFooter(){
         ButtonTitle = 'Confirm';
-        if (this.props.ButtonTitleConfirm != null) {
-            ButtonTitle = this.props.ButtonTitleConfirm
+        if (this.props.ConfirmButtonTitle != null) {
+            ButtonTitle = this.props.ConfirmButtonTitle
         }
 
         return (

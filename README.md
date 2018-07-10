@@ -42,7 +42,7 @@ $ react-native run-android   // For Android
         data={items}
         headerComponent={<Text style={{fontSize:25}} >items</Text>}
         OnConfirm={(pItems) => this.handleConfirm(pItems)}
-        ButtonTitleConfirm='OK'
+        ConfirmButtonTitle='OK'
         DescriptionField='itemDescription'
         KeyField='itemKey'
         placeholder='select some items'
@@ -59,7 +59,7 @@ $ react-native run-android   // For Android
 | ------------ | ------------- | ------------ |------------ |------------ |
 | `data` | array  | Json with id and description | null | false
 | ```headerComponent``` | component  | Header component | null | true
-| ```ButtonTitleConfirm``` | String  | confirm button's title | confirm | true
+| ```ConfirmButtonTitle``` | String  | confirm button's title | confirm | true
 | ```DescriptionField``` | string  | Description Field of data object | null | false
 | ```KeyField``` | string  | key Field | null | false
 | `placeholder` | string | The string that will be rendered before items has been selected | null | true

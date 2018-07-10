@@ -5,7 +5,7 @@ export default class ModalOVerlay extends React.PureComponent{
 
     renderContentModal() {
         return(
-            <View style={[EstiloModalOverload.container, this.props.styleContainer]}>
+            <View style={[StyleModalOverload.container, this.props.styleContainer]}>
                 <View style={[this.props.styleContent, EstiloModalOverload.containerChildren]}>
                     {this.props.children}
                 </View>
