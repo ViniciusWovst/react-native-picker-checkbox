@@ -61,7 +61,7 @@ export default class PickerCheckbox extends React.Component {
             vArrowColor = this.props.arrowColor;
         }
 
-        vArrowSize = null;
+        vArrowSize = 8;
         if (this.props.arrowSize != null) {
             vArrowSize = this.props.arrowSize;
         }
