@@ -75,4 +75,3 @@ If you'd like to see something added or changed to this module please open a new
 ### License
 
  - [Apache-2.0](https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/LICENSE). Vinícius Wovst
-# react-native-picker-checkbox
