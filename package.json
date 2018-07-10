@@ -1,0 +1,34 @@
+{
+  "name": "react-native-picker-checkbox",
+  "version": "1.0.0",
+  "description": "A simple picker component with checkbox list for React-Native",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniciusWovst/react-native-picker-checkbox.git"
+    
+  },
+  "keywords": [
+    "react-component",
+    "ios",
+    "android",
+    "react-native",
+    "picker",
+    "checkbox"
+  ],
+  "author": "Vinícius Wovst <viniciuswovst@gmail.com>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/ViniciusWovst/react-native-picker-checkbox/issues"
+  },
+  "homepage": "https://github.com/ViniciusWovst/react-native-picker-checkbox#readme",
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
+}
