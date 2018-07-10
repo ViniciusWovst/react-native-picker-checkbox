@@ -62,7 +62,7 @@ $ react-native run-android   // For Android
 | ```ConfirmButtonTitle``` | String  | confirm button's title | confirm | true
 | ```DescriptionField``` | string  | Description Field of data object | null | false
 | ```KeyField``` | string  | key Field | null | false
-| `placeholder` | string | The string that will be rendered before items has been selected | null | true
+| `placeholder` | string | The text that will be rendered before items has been selected | null | true
 | ```containerStyle``` | object  | picker container style | null | true
 | ```arrowColor``` | string  | Arrow Color | #000 | true
 | ```arrowSize``` | number  | Arrow Size | 8 | true
