@@ -2,6 +2,8 @@
 
 A simple picker component with checkbox list for React-Native.
 
+
+
 ### Example
 ```sh
 $ cd example
@@ -66,7 +68,8 @@ $ react-native run-android   // For Android
 | ```containerStyle``` | object  | picker container style | null | true
 | ```arrowColor``` | string  | Arrow Color | #000 | true
 | ```arrowSize``` | number  | Arrow Size | 8 | true
-
+| ```dividerColor``` | string  | Divider Color | #EEEEEE | true
+| ```dividerVisible``` | boolean  | Division between header and content  | true | true
 
 ### Contributing
 

@@ -134,7 +134,33 @@ export default class PickerCheckbox extends React.Component {
 
     renderHeader(){
         if (this.props.headerComponent != null) {
-            return this.props.headerComponent
+            DividerVisible = true;
+            DividerColor = '#EEEEEE'
+            vDivider = null;
+            if (this.props.dividerVisible != null) {
+                DividerVisible = this.props.dividerVisible;
+            }
+
+            if (this.props.dividerColor != null) {
+                DividerColor = this.props.dividerColor;
+            }
+
+            if (DividerVisible) {
+                vDivider = <View
+                style={{
+                    borderBottomColor: DividerColor,
+                    borderBottomWidth: 1,
+                    marginTop:10
+                }}
+            /> 
+            }
+            return (
+                <View>
+                    {this.props.headerComponent}
+                    {vDivider}
+                </View>
+                
+            )
         }
     }
 
