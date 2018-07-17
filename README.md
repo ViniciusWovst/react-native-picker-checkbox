@@ -1,5 +1,4 @@
 [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/react-native-picker-checkbox)
-[![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/react-native-picker-checkbox)
 
 # react-native-picker-checkbox
 
