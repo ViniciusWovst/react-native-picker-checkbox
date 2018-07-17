@@ -1,10 +1,19 @@
+[![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/react-native-picker-checkbox)
+[![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/react-native-picker-checkbox)
+
 # react-native-picker-checkbox
 
 A simple picker component with checkbox list for React-Native.
 
 
+### Contents
 
-### Example
+- [Example](#Example)
+- [Installation](#Installation)
+- [Properties](#Properties)
+
+
+# Example
 ```sh
 $ cd example
 $ npm i
@@ -12,10 +21,10 @@ $ react-native run-ios   // For ios
 $ react-native run-android   // For Android
 ```
 
-### Installation
+# Installation
 ``npm install react-native-picker-checkbox --save``
 
-### Usage
+# Usage
 ```javascript
   import PickerCheckBox from 'react-native-picker-checkbox';
 
@@ -55,7 +64,7 @@ $ react-native run-android   // For Android
   }
 ```
 
-### Properties
+# Properties
 
 | Name | Type | Description | Default | Optional
 | ------------ | ------------- | ------------ |------------ |------------ |
@@ -71,10 +80,10 @@ $ react-native run-android   // For Android
 | ```dividerColor``` | string  | Divider Color | #EEEEEE | true
 | ```dividerVisible``` | boolean  | Division between header and content  | true | true
 
-### Contributing
+# Contributing
 
 If you'd like to see something added or changed to this module please open a new GitHub issue. Pull requests are always welcome.
 
-### License
+# License
 
  - [Apache-2.0](https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/LICENSE). Vinicius Wovst
