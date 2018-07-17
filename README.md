@@ -5,11 +5,11 @@
 A simple picker component with checkbox list for React-Native.
 
 
-### Contents
+# Contents
 
-- [Example](#Example)
-- [Installation](#Installation)
-- [Properties](#Properties)
+- [Example](#example)
+- [Installation](#installation)
+- [Properties](#properties)
 
 
 # Example
