@@ -2,7 +2,6 @@
 
 A simple picker component with checkbox list for React-Native.
 
-
 # Contents
 
 - [Example](#example)
