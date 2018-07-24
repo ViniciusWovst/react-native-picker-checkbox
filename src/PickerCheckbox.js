@@ -5,7 +5,13 @@ import {View,Text,
 import ModalOVerlay from './modalOverlay';
 import Triangle from './Triangle';
 
+const ARROW_COLOR = 'black';
+const PLACEHOLDER_COLOR = '#899DAE';
+const DIVIDER_COLOR = '#EEEEEE';
+const CONFIRM_BUTTON_TITLE = 'Confirm';
+
 export default class PickerCheckbox extends React.Component {
+    
     constructor(props) {
         super(props); 
         this.state = {
@@ -13,6 +19,7 @@ export default class PickerCheckbox extends React.Component {
             checkedItems:[]
         };
     }
+
 
     //Events
     handleRequestClose(){
@@ -56,7 +63,7 @@ export default class PickerCheckbox extends React.Component {
 
     //render Methods
     renderArrow () {
-        vArrowColor = 'black';
+        vArrowColor = ARROW_COLOR;
         if (this.props.arrowColor != null) {
             vArrowColor = this.props.arrowColor;
         }
@@ -80,23 +87,12 @@ export default class PickerCheckbox extends React.Component {
     }
 
     renderPlaceHolder (){
-        vPlaceHolder = ''
-        if (this.props.placeholder != null) {
-            vPlaceHolder = this.props.placeholder
-        }
-
-        vColorTextPlaceHolder = '#899DAE';
-        if (this.props.placeholderTextColor != null) {
-            vColorTextPlaceHolder = this.props.placeholderTextColor
-        }
-
+        vPlaceHolder = this.props.placeholder || '';
+        vColorTextPlaceHolder = this.props.placeholderTextColor || PLACEHOLDER_COLOR;
+    
         return(
             <View
-                style={{
-                    flex:1,
-                    justifyContent: 'center',
-                    paddingLeft:10
-                }}>
+                style={StyleCheckBoxListPicker.containerPlaceholder}>
                 <Text style={[{
                     color:vColorTextPlaceHolder,
                     fontSize:16
@@ -132,44 +128,36 @@ export default class PickerCheckbox extends React.Component {
         )
     }
 
-    renderHeader(){
-        if (this.props.headerComponent != null) {
-            DividerVisible = true;
-            DividerColor = '#EEEEEE'
-            vDivider = null;
-            if (this.props.dividerVisible != null) {
-                DividerVisible = this.props.dividerVisible;
-            }
-
-            if (this.props.dividerColor != null) {
-                DividerColor = this.props.dividerColor;
-            }
-
-            if (DividerVisible) {
-                vDivider = <View
+    renderDivider(){
+        DividerVisible = this.props.dividerVisible||true;
+        DividerColor = this.props.dividerColor||DIVIDER_COLOR;
+        vDivider = null;
+        
+        if (DividerVisible) {
+            vDivider = <View
                 style={{
                     borderBottomColor: DividerColor,
                     borderBottomWidth: 1,
                     marginTop:10
-                }}
-            /> 
+                }}/>
+        }
+        return vDivider;
+    }
+    
+    renderHeader(){
+        if (this.props.headerComponent != null) {
+            vDivider = this.renderDivider()
             }
             return (
                 <View>
                     {this.props.headerComponent}
                     {vDivider}
                 </View>
-                
             )
         }
-    }
 
     renderFooter(){
-        ButtonTitle = 'Confirm';
-        if (this.props.ConfirmButtonTitle != null) {
-            ButtonTitle = this.props.ConfirmButtonTitle
-        }
-
+        ButtonTitle = this.props.ConfirmButtonTitle || CONFIRM_BUTTON_TITLE;
         return (
             <View style={StyleCheckBoxListPicker.containerFooter}>
                 {this.renderConfirmButton(ButtonTitle)}
@@ -195,7 +183,6 @@ export default class PickerCheckbox extends React.Component {
             </FlatList>
         )
     }
-
     renderModal(){
         return (
             <View style={{
@@ -276,6 +263,12 @@ StyleCheckBoxListPicker = StyleSheet.create({
         flexDirection:'row', 
         paddingBottom:5,
         alignItems:'center'
+    },
+    
+    containerPlaceholder: {
+        flex:1,
+        justifyContent: 'center',
+        paddingLeft:10
     }
 
 });
