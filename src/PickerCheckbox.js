@@ -9,9 +9,10 @@ const ARROW_COLOR = 'black';
 const PLACEHOLDER_COLOR = '#899DAE';
 const DIVIDER_COLOR = '#EEEEEE';
 const CONFIRM_BUTTON_TITLE = 'Confirm';
+const PLACEHOLDER_ITEMS_SELECTED_COLOR = 'black';
+const PLACEHOLDER_ITEMS_SELECTED = '$count selected item(s)';
 
 export default class PickerCheckbox extends React.Component {
-    
     constructor(props) {
         super(props); 
         this.state = {
@@ -89,6 +90,12 @@ export default class PickerCheckbox extends React.Component {
     renderPlaceHolder (){
         vPlaceHolder = this.props.placeholder || '';
         vColorTextPlaceHolder = this.props.placeholderTextColor || PLACEHOLDER_COLOR;
+        if (this.state.checkedItems.length > 0){
+            vPlaceHolderSelectedItems = this.props.placeholderSelectedItems || PLACEHOLDER_ITEMS_SELECTED;
+            vCount = this.state.checkedItems.length
+            vPlaceHolder = vPlaceHolderSelectedItems.replace('$count', vCount);
+            vColorTextPlaceHolder = PLACEHOLDER_ITEMS_SELECTED_COLOR
+        }
     
         return(
             <View

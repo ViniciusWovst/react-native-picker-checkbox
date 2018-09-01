@@ -55,6 +55,7 @@ $ react-native run-android   // For Android
         placeholder='select some items'
         arrowColor='#FFD740'
         arrowSize={10}
+        placeholderSelectedItems ='$count selected item(s)'
         />
     )
   }
@@ -75,6 +76,8 @@ $ react-native run-android   // For Android
 | ```arrowSize``` | number  | Arrow Size | 8 | true
 | ```dividerColor``` | string  | Divider Color | #EEEEEE | true
 | ```dividerVisible``` | boolean  | Division between header and content  | true | true
+| ```placeholderSelectedItems``` | string  | Division between header and content  | $count selected item(s) | true
+
 
 # Contributing
 
