@@ -52,7 +52,7 @@ export default class PickerCheckbox extends React.Component {
         }
         this.setState({checkedItems: tmp});
     }
-    
+
     //Other Methods
     setModalVisible(pVisible) {
         this.setState({modalVisible: pVisible});
@@ -180,6 +180,10 @@ export default class PickerCheckbox extends React.Component {
     }
 
     renderFlatList() {
+        vCheckedItems = this.props.checkedItems;
+        if (vCheckedItems != null) {
+            this.state.checkedItems = vCheckedItems;
+        }
         return (
             <FlatList
                 style={{flex:1}}
@@ -208,6 +212,7 @@ export default class PickerCheckbox extends React.Component {
     renderContainerModal = () => {
         return (
             <ModalOVerlay
+                cancelable={false}
                 visible={this.state.modalVisible}    
                 styleContent={StyleCheckBoxListPicker.containerModal}
                 onRequestClose={() => this.handleRequestClose()}>

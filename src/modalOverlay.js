@@ -1,15 +1,25 @@
 import React, { PureComponent } from 'react';
-import {StyleSheet, View, Modal} from 'react-native';
+import {StyleSheet, View, Modal, TouchableHighlight} from 'react-native';
 
 export default class ModalOVerlay extends React.PureComponent{
 
+    _handlePressBackModal(){
+        pressBackModal = this.props.cancelable == null||this.props.cancelable;
+        if (pressBackModal){
+            this.props.onRequestClose();
+        }
+    }
     renderContentModal() {
         return(
-            <View style={[StyleModalOverload.container, this.props.styleContainer]}>
+            <TouchableHighlight 
+                onPress={() => this._handlePressBackModal()}
+                underlayColor='rgba(0, 0, 0, 0.55)'
+                activeOpacity={1}
+                style={[EstiloModalOverload.container, this.props.styleContainer]}>
                 <View style={[this.props.styleContent, EstiloModalOverload.containerChildren]}>
                     {this.props.children}
                 </View>
-            </View>
+            </TouchableHighlight>
         )
     }
     render() {
@@ -27,7 +37,7 @@ export default class ModalOVerlay extends React.PureComponent{
     }
 }
 
-StyleModalOverload = StyleSheet.create({
+EstiloModalOverload = StyleSheet.create({
     container :{
         flex:1,
         backgroundColor:'rgba(0, 0, 0, 0.55)',

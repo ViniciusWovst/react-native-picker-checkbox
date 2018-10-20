@@ -76,7 +76,9 @@ $ react-native run-android   // For Android
 | ```arrowSize``` | number  | Arrow Size | 8 | true
 | ```dividerColor``` | string  | Divider Color | #EEEEEE | true
 | ```dividerVisible``` | boolean  | Division between header and content  | true | true
-| ```placeholderSelectedItems``` | string  | Placeholder when there is selected item  | $count selected item(s) | true
+| ```placeholderSelectedItems``` | string  | Placeholder when there is selected item  | 
+| ```checkedItems``` | JSON  | items checked that will show when open the picker  | 
+null | true
 
 
 # Contributing
