@@ -190,7 +190,7 @@ export default class PickerCheckbox extends React.Component {
                 data={this.props.data}
                 extraData = {this.state}
                 renderItem={({item}) => this.renderItems(item)}
-                keyExtractor={(item,index) => item.id}>       
+                keyExtractor={(item,index) => index.toString()}>       
             </FlatList>
         )
     }
