@@ -1,1 +1,2 @@
-export { default as PickerCheckbox } from './src/PickerCheckbox.js';
+import PickerCheckbox from './src/PickerCheckbox.js';
+export default  PickerCheckbox  ;
