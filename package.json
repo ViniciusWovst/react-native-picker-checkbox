@@ -1,6 +1,6 @@
 {
   "name": "react-native-picker-checkbox",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "A simple picker component with checkbox list for React-Native",
   "main": "index.js",
   "directories": {

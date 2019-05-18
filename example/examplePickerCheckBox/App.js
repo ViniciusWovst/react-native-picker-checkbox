@@ -9,6 +9,23 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+import PickerCheckBox from 'react-native-picker-checkbox';
+
+const items = [
+  {
+    itemKey:1,
+    itemDescription:'Item 1'
+    },
+  {
+    itemKey:2,
+    itemDescription:'Item 2'
+    },
+  {
+    itemKey:3,
+    itemDescription:'Item 3'
+    }
+];
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -18,15 +35,27 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
+  handleConfirm(pItems){
+    console.log('pItems =>', pItems);
   }
+
+  render() {
+    return(
+      <PickerCheckBox
+        data={items}
+        headerComponent={<Text style={{fontSize:25}} >items</Text>}
+        OnConfirm={(pItems) => this.handleConfirm(pItems)}
+        ConfirmButtonTitle='OK'
+        DescriptionField='itemDescription'
+        KeyField='itemKey'
+        placeholder='select some items'
+        arrowColor='#FFD740'
+        arrowSize={10}
+        placeholderSelectedItems ='$count selected item(s)'
+        />
+    )
+  }
+
 }
 
 const styles = StyleSheet.create({

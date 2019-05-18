@@ -2,11 +2,22 @@
 
 A simple picker component with checkbox list for React-Native.
 
+[![npm version](https://badge.fury.io/js/react-native-picker-checkbox.svg)](https://www.npmjs.com/package/react-native-picker-checkbox)
+[![npm](https://img.shields.io/npm/dm/react-native-picker-checkbox.svg)]()
+
 # Contents
 
 - [Example](#example)
 - [Installation](#installation)
 - [Properties](#properties)
+
+<p align="center">
+ <img src="https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/docs/ExampleImage.png" height="500" />
+</p>
+<br/>
+<p align="center">
+ <img src="https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/docs/ExampleImage2.png" height="500" />
+</p>
 
 
 # Example
