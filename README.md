@@ -11,14 +11,8 @@ A simple picker component with checkbox list for React-Native.
 - [Installation](#installation)
 - [Properties](#properties)
 
-<p align="center">
- <img src="https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/docs/ExampleImage.png" height="500" />
-</p>
-<br/>
-<p align="center">
- <img src="https://github.com/ViniciusWovst/react-native-picker-checkbox/blob/master/docs/ExampleImage2.png" height="500" />
-</p>
-
+![ui3](./docs/ExampleImage.png)
+![ui4](./docs/ExampleImage2.png)
 
 # Example
 ```sh
