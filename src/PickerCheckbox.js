@@ -3,7 +3,7 @@ import {View,Text,
         TouchableNativeFeedback,
         FlatList, CheckBox, Button, StyleSheet } from 'react-native';
 import ModalOVerlay from './modalOverlay';
-import Triangle from './Triangle';
+import {Ionicons} from '@expo/vector-icons'
 
 const ARROW_COLOR = 'black';
 const PLACEHOLDER_COLOR = '#899DAE';
@@ -69,7 +69,7 @@ export default class PickerCheckbox extends React.Component {
             vArrowColor = this.props.arrowColor;
         }
 
-        vArrowSize = 8;
+        vArrowSize = 20;
         if (this.props.arrowSize != null) {
             vArrowSize = this.props.arrowSize;
         }
@@ -79,9 +79,10 @@ export default class PickerCheckbox extends React.Component {
                 alignItems:'flex-end',
                 paddingRight:15,
                 width:30}}>
-                <Triangle
-                    triangleColor={vArrowColor}
-                    trianguleSize={vArrowSize}
+                <Ionicons
+                   color={vArrowColor}
+                    size={vArrowSize}
+                    name='md-arrow-dropdown'
                 />
             </View>
         )
