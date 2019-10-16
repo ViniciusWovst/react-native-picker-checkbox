@@ -31,8 +31,7 @@ local.properties
 *.iml
 
 # node.js
-#
-npm-debug.log
+
 
 # BUCK
 buck-out/
