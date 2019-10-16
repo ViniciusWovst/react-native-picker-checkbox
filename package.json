@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/ViniciusWovst/react-native-picker-checkbox#readme",
   "dependencies": {
+    "@expo/vector-icons": "^10.0.6",
     "prop-types": "^15.6.0"
   }
 }
