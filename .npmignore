@@ -1,6 +1,5 @@
 .DS_Store
 example/
-npm-debug.log
 .travis.yml
 README.md
 .babelrc
