@@ -2,8 +2,11 @@
 
 A simple picker component with checkbox list for React-Native.
 
+
 [![npm version](https://badge.fury.io/js/react-native-picker-checkbox.svg)](https://www.npmjs.com/package/react-native-picker-checkbox)
 [![npm](https://img.shields.io/npm/dm/react-native-picker-checkbox.svg)]()
+[![npm](https://img.shields.io/npm/dt/react-native-picker-checkbox?label=Total%20Download)]()
+
 
 # Contents
 
